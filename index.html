@@ -1,1 +1,108 @@
-<h1>Hello, Mizu Here!</h1>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mizu | Vending Machine Pekanbaru</title>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="images/mizu.ico" />
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Mizu adalah perusahaan vending machine asal Pekanbaru yang memproduksi dan mendistribusikan minuman otomatis dengan teknologi modern." />
+  <meta name="keywords" content="Mizu, vending machine, mesin minuman, Pekanbaru, distribusi minuman, mesin otomatis, vending Indonesia">
+  <meta name="author" content="Mizu Vending Machine">
+  <meta property="og:title" content="Mizu | Vending Machine Pekanbaru">
+  <meta property="og:description" content="Solusi mesin vending modern dan distribusi minuman otomatis dari Pekanbaru.">
+  <meta property="og:image" content="https://mizuvend.com/images/mizu-logo.png">
+  <meta property="og:url" content="https://mizuvend.com">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+  <header>
+    <div class="container header-inner">
+      <a href="/" class="logo">
+        <img src="images/white-mizu-logo.png" alt="Mizu Logo">
+      </a>
+      <button class="menu-toggle" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav>
+        <ul>
+          <li><a href="#tentang">Tentang</a></li>
+          <li><a href="#layanan">Layanan</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Mizu: Solusi Vending Machine Cerdas</h2>
+      <p>Mesin vending modern & distribusi minuman otomatis.</p>
+      <a href="#layanan" class="btn">Jelajahi Layanan</a>
+    </div>
+  </section>
+
+  <section id="tentang" class="section">
+    <div class="container">
+      <h2 class="section-title">Tentang Kami</h2>
+      <p class="section-text">
+        Mizu adalah perusahaan teknologi vending machine asal Pekanbaru, menyediakan mesin pintar dan layanan distribusi minuman berkualitas. Kami percaya bahwa otomatisasi dapat membawa kenyamanan bagi semua orang.
+      </p>
+    </div>
+  </section>
+
+  <section id="layanan" class="section bg-light">
+    <div class="container">
+      <h2 class="section-title">Produk & Layanan</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Produksi Mesin Vending</h3>
+          <p>Kami merancang dan membangun mesin vending dengan desain modern dan teknologi terkini.</p>
+        </div>
+        <div class="card">
+          <h3>Distribusi Minuman</h3>
+          <p>Pasokan minuman otomatis dengan sistem logistik yang terintegrasi dan efisien.</p>
+        </div>
+        <div class="card">
+          <h3>Monitoring & Maintenance</h3>
+          <p>Sistem pemantauan jarak jauh, serta dukungan teknis dan perawatan mesin vending Anda.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="kontak" class="section">
+    <div class="container">
+      <h2 class="section-title">Hubungi Kami</h2>
+      <p class="section-text">Ingin bermitra atau bertanya? Hubungi kami:</p>
+      <ul class="contact-info">
+        <li>Email: <a href="mailto:contact@mizuvend.co.id">contact@mizuvend.co.id</a></li>
+        <li>Whatsapp: +62 821-7017-5392</li>
+        <li>Alamat: Jl. Merak Ujung, Pekanbaru</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Mizu. Vending with care</p>
+    </div>
+  </footer>
+
+  <!-- JS untuk animasi hamburger -->
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav');
+
+    toggle.addEventListener('click', () => {
+      toggle.classList.toggle('active');
+      nav.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
