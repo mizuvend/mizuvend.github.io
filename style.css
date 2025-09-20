@@ -56,6 +56,29 @@ nav ul li a:hover {
   opacity: 0.8;
 }
 
+nav a {
+  text-decoration: none; /* Hilangkan garis bawah default */
+  color: white; /* atau warna sesuai desain */
+  margin: 0 15px;
+  font-weight: bold;
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px; /* jarak dari teks */
+  width: 0;
+  height: 3px;
+  background-color: white; /* warna garis bawah */
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
 /* HERO */
 .hero {
   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)),
