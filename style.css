@@ -24,6 +24,12 @@ body {
 header {
   background: #0077b6;
   color: white;
+  position: fixed;
+  left: 0;
+  background: #0077b6;
+  width: 100%;
+  z-index: 1000;
+  border-top: 1px solid rgba(255,255,255,0.2);
   padding: 10px 0;
 }
 
@@ -223,19 +229,19 @@ footer {
 /* RESPONSIVE */
 @media (max-width: 768px) {
   header {
-    position: relative;
+    position: sticky;
   }
 
   .menu-toggle {
     display: flex;
-    position: absolute;
+    position: fixed;
     right: 20px;
     top: 20px;
   }
 
   nav {
     display: none;
-    position: absolute;
+    position: sticky;
     top: 100%;
     left: 0;
     background: #0077b6;
