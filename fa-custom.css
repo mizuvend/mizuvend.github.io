@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'Font Awesome 6 Free';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url('./webfonts/fa-solid-900.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Font Awesome 6 Brands';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./webfonts/fa-brands-400.woff2') format('woff2');
+}
+
+.fa-solid, .fas {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+}
+
+.fa-brands, .fab {
+  font-family: 'Font Awesome 6 Brands';
+  font-weight: 400;
+}
+
+/* Pastikan semua icon tidak italic */
+i.fas, i.fab, .fa {
+  font-style: normal !important;
+}
+
+/* Industry Icon */
+.fa-industry:before {
+  content: "\f275";
+}
+
+/* Truck Icon */
+.fa-truck:before {
+  content: "\f0d1";
+}
+
+/* Tools Icon */
+.fa-tools:before {
+  content: "\f7d9";
+}
+
+/* Envelope Icon */
+.fa-envelope:before {
+  content: "\f0e0";
+}
+
+/* Map Marker Alt Icon */
+.fa-map-marker-alt:before {
+  content: "\f3c5";
+}
+
+/* WhatsApp Icon */
+.fa-whatsapp:before {
+  content: "\f232";
+}
+
+/* Instagram Icon */
+.fa-instagram:before {
+  content: "\f16d";
+}
