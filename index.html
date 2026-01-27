@@ -30,10 +30,7 @@
       src: url(https://fonts.gstatic.com/s/urbanist/v15/L0xjDF02iFML4hGCyOCpRdycFsG7SsDQ.woff2) format('woff2');
     }
   </style>
-  <link rel="preload" href="fa-custom.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="style.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="fa-custom.css"></noscript>
-  <noscript><link rel="stylesheet" href="style.min.css"></noscript>
+  <link rel="stylesheet" href="fa-custom.css">
   <link rel="icon" type="image/x-icon" href="images/mizu.ico" />
   <link rel="shortcut icon" type="image/x-icon" href="images/mizu.ico" />
   <meta name="description" content="Mizu Vending Machine Pekanbaru - Solusi mesin vending modern, produksi dan distribusi minuman otomatis dengan teknologi terkini. Hubungi kami untuk layanan vending machine terpercaya.">
@@ -58,7 +55,7 @@
   <meta name="theme-color" content="#0077b6">
   <meta name="msapplication-TileColor" content="#0077b6">
   <style>
-    *{margin:0;padding:0;box-sizing:border-box;}:root{--primary-color:#0077b6;--secondary-color:#00b4d8;--dark-color:#03045e;--bg-light:#f7fafc;--gradient-primary:linear-gradient(135deg,var(--primary-color),var(--dark-color));--gradient-secondary:linear-gradient(135deg,var(--secondary-color),var(--primary-color));}body{font-family:'Urbanist',sans-serif;line-height:1.6;background-color:var(--bg-light);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-display:swap;}.container{width:90%;max-width:1200px;margin:auto;padding:0 20px;}header{background:var(--primary-color);color:white;position:fixed;left:0;width:100%;z-index:1000;padding:15px 0;box-shadow:0 2px 20px rgba(0,0,0,0.3);}.header-inner{display:flex;justify-content:space-between;align-items:center;}.logo img{vertical-align:middle;height:36px;width:64px;transition:transform 0.3s ease;object-fit:contain;}.menu-toggle{display:none;flex-direction:column;justify-content:center;gap:6px;width:30px;height:30px;background:none;border:none;cursor:pointer;z-index:1001;}.menu-toggle span{display:block;height:3px;width:100%;background:white;border-radius:3px;transition:all 0.3s ease;}nav{display:flex;}nav ul{list-style:none;display:flex;gap:30px;}nav ul li a{color:white;text-decoration:none;font-weight:600;transition:opacity 0.3s ease;}.hero{background:linear-gradient(rgba(10,35,66,0.7),rgba(0,0,0,0.8)),url('images/banner.webp') no-repeat center center/cover;min-height:100vh;color:white;display:flex;align-items:center;justify-content:center;text-align:center;padding:80px 20px 40px;position:relative;overflow:hidden;will-change:transform;transform:translateZ(0);}.hero-content{z-index:1;animation:fadeInUp 1s ease-out;}.hero-content h2{font-size:clamp(2.5rem,5vw,4rem);margin-bottom:20px;font-weight:700;text-shadow:2px 2px 4px rgba(0,0,0,0.3);background:linear-gradient(135deg,#ffffff,var(--secondary-color));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}.hero-content p{font-size:clamp(1.1rem,2vw,1.5rem);margin-bottom:40px;opacity:0.9;max-width:600px;margin-left:auto;margin-right:auto;}.btn{background:var(--gradient-secondary);color:white;padding:15px 30px;text-decoration:none;border-radius:50px;font-weight:600;transition:all 0.3s ease;display:inline-block;position:relative;overflow:hidden;box-shadow:0 4px 15px rgba(0,119,182,0.3);}.btn:hover{background:var(--gradient-primary);transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,119,182,0.4);}@keyframes fadeInUp{from{opacity:0;transform:translateY(30px);}to{opacity:1;transform:translateY(0);}}@media(max-width:768px){.menu-toggle{display:flex;position:fixed;right:15px;top:15px;z-index:1002;}nav{display:none;position:fixed;top:0;left:0;background:var(--primary-color);width:100%;height:100vh;padding:80px 20px 20px;z-index:1001;}nav.active{display:flex;align-items:center;justify-content:center;}nav ul{flex-direction:column;align-items:center;gap:20px;width:100%;max-width:400px;}nav ul li a{display:block;padding:15px 30px;text-align:center;width:100%;font-size:18px;border-radius:50px;background:rgba(255,255,255,0.1);}}
+    *{margin:0;padding:0;box-sizing:border-box;}:root{--primary-color:#0077b6;--secondary-color:#00b4d8;--dark-color:#03045e;--bg-light:#f7fafc;--gradient-primary:linear-gradient(135deg,var(--primary-color),var(--dark-color));--gradient-secondary:linear-gradient(135deg,var(--secondary-color),var(--primary-color));}body{font-family:'Urbanist',sans-serif;line-height:1.6;background-color:var(--bg-light);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-display:swap;}.container{width:90%;max-width:1200px;margin:auto;padding:0 20px;}header{background:var(--primary-color);color:white;position:fixed;left:0;width:100%;z-index:1000;padding:15px 0;box-shadow:0 2px 20px rgba(0,0,0,0.3);}.header-inner{display:flex;justify-content:space-between;align-items:center;}.logo img{vertical-align:middle;height:36px;width:64px;transition:transform 0.3s ease;object-fit:contain;}.menu-toggle{display:none;flex-direction:column;justify-content:center;gap:6px;width:30px;height:30px;background:none;border:none;cursor:pointer;z-index:1002;}.menu-toggle span{display:block;height:3px;width:100%;background:white;border-radius:3px;transition:all 0.3s ease;}nav{display:flex;}nav ul{list-style:none;display:flex;gap:30px;}nav ul li{position:relative;}nav ul li a{color:white;text-decoration:none;font-weight:600;transition:opacity 0.3s ease;display:flex;align-items:center;gap:8px;padding:10px 0;}.nav-arrow{font-size:12px;transition:transform 0.3s ease;}.nav-item:hover .nav-arrow{transform:rotate(180deg);}.nav-dropdown{position:absolute;top:100%;left:50%;transform:translateX(-50%);background:white;border-radius:12px;box-shadow:0 10px 40px rgba(0,0,0,0.15);min-width:200px;max-height:0;overflow:hidden;transition:max-height 0.3s ease ease,padding 0 10px;opacity:0;visibility:hidden;}.nav-dropdown::before{content:'';position:absolute;top:-6px;left:50%;transform:translateX(-50%) rotate(45deg);width:12px;height:12px;background:white;border-radius:2px;}.nav-item:hover>.nav-dropdown{max-height:500px;opacity:1;visibility:visible;padding:10px 0;}.nav-dropdown li{border-bottom:1px solid #eee;}.nav-dropdown li:last-child{border-bottom:none;}.nav-dropdown li a{color:#333;padding:12px 20px;display:block;font-size:14px;transition:all 0.2s ease;}.nav-dropdown li a:hover{background:var(--bg-light);color:var(--primary-color);}.hero{background:linear-gradient(rgba(10,35,66,0.7),rgba(0,0,0,0.8)),url('images/banner.webp') no-repeat center center/cover;min-height:100vh;color:white;display:flex;align-items:center;justify-content:center;text-align:center;padding:80px 20px 40px;position:relative;overflow:hidden;will-change:transform;transform:translateZ(0);}.hero-content{z-index:1;animation:fadeInUp 1s ease-out;}.hero-content h2{font-size:clamp(2.5rem,5vw,4rem);margin-bottom:20px;font-weight:700;text-shadow:2px 2px 4px rgba(0,0,0,0.3);background:linear-gradient(135deg,#ffffff,var(--secondary-color));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}.hero-content p{font-size:clamp(1.1rem,2vw,1.5rem);margin-bottom:40px;opacity:0.9;max-width:600px;margin-left:auto;margin-right:auto;}.btn{background:var(--gradient-secondary);color:white;padding:15px 30px;text-decoration:none;border-radius:50px;font-weight:600;transition:all 0.3s ease;display:inline-block;position:relative;overflow:hidden;box-shadow:0 4px 15px rgba(0,119,182,0.3);}.btn:hover{background:var(--gradient-primary);transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,119,182,0.4);}.section{padding:80px 0;}.section-title{text-align:center;font-size:2rem;color:var(--dark-color);margin-bottom:15px;font-weight:700;}.section-text{text-align:center;color:#666;max-width:700px;margin:0 auto 30px;line-height:1.8;}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px;}.card{background:white;border-radius:16px;padding:35px;box-shadow:0 5px 20px rgba(0,0,0,0.08);transition:all 0.3s ease;border:1px solid #e5e7eb;}.card:hover{transform:translateY(-8px);box-shadow:0 15px 40px rgba(0,119,182,0.15);}.card-icon{width:70px;height:70px;background:var(--gradient-secondary);border-radius:16px;display:flex;align-items:center;justify-content:center;margin-bottom:25px;font-size:28px;color:white;}.card h3{color:var(--dark-color);margin-bottom:15px;font-size:1.4rem;font-weight:700;}.card p{color:#666;margin-bottom:20px;line-height:1.7;}.card-btn{margin-top:auto;}.contact-info{list-style:none;max-width:500px;margin:0 auto;}.contact-info li{display:flex;align-items:center;gap:15px;margin-bottom:15px;color:#fff;}.contact-info li a{color:var(--secondary-color);text-decoration:underline;font-weight:600;}.contact-info i{font-size:20px;width:24px;text-align:center;}.footer{background:var(--dark-color);color:white;padding:50px 0;}.footer-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;}.footer-links a{color:white;text-decoration:none;margin-left:20px;transition:opacity 0.3s ease;font-size:14px;}.footer-links a:hover{opacity:0.8;}.bg-light{background:#f0f7fc;}@keyframes fadeInUp{from{opacity:0;transform:translateY(30px);}to{opacity:1;transform:translateY(0);}}@media(max-width:768px){.menu-toggle{display:flex;position:fixed;right:15px;top:15px;z-index:1002;}nav{display:none;position:fixed;top:0;left:0;background:var(--primary-color);width:100%;height:100vh;padding:80px 20px 20px;z-index:1001;}nav.active{display:flex;align-items:center;justify-content:center;}nav ul{flex-direction:column;align-items:center;gap:10px;width:100%;max-width:400px;}nav ul li a{display:block;padding:12px 20px;text-align:center;width:100%;font-size:16px;border-radius:8px;background:rgba(255,255,255,0.1);}.nav-arrow{display:none;}.nav-dropdown{position:static;transform:none;background:rgba(255,255,255,0.15);box-shadow:none;max-height:none;opacity:1;visibility:visible;overflow:visible;padding:10px 0 10px;}.nav-dropdown::before{display:none;}.nav-dropdown li{border-bottom:none;}.nav-dropdown li a{padding:12px 20px;color:#fff;}.nav-dropdown li a:hover{background:rgba(255,255,255,0.2);}.page-header{padding:100px 20px 60px;}.hero{padding:60px 20px;}.grid{grid-template-columns:1fr;}.footer-inner{flex-direction:column;text-align:center;gap:15px;}.footer-links a{margin:0 10px;}}
   </style>
   <script type="application/ld+json">
   {
@@ -93,10 +90,10 @@
       "name": "Pekanbaru dan sekitarnya"
     },
     "serviceType": [
-      "Produksi Mesin Vending",
-      "Distribusi Minuman Otomatis",
-      "Maintenance Vending Machine",
-      "Konsultasi Vending Machine"
+      "Jual Vending Machine",
+      "Sewa Vending Machine",
+      "Custom Vending Machine",
+      "Software Monitoring"
     ],
     "aggregateRating": {
       "@type": "AggregateRating",
@@ -137,7 +134,7 @@
              srcset="images/white-mizu-logo-small.png 64w,
                      images/white-mizu-logo.png 400w"
              sizes="64px"
-             alt="Mizu Vending Machine Logo - Solusi Mesin Minuman Otomatis Pekanbaru">
+             alt="Mizu Vending Machine Logo">
       </a>
       <button class="menu-toggle" aria-label="Toggle Menu">
         <span></span>
@@ -147,13 +144,21 @@
       <nav>
         <ul>
           <li><a href="#tentang">Tentang</a></li>
-          <li><a href="#layanan">Layanan</a></li>
+          <li class="nav-item">
+            <a href="#layanan">Layanan <i class="fas fa-chevron-down nav-arrow"></i></a>
+            <ul class="nav-dropdown">
+              <li><a href="jual.html">Jual Vending Machine</a></li>
+              <li><a href="sewa.html">Sewa Vending Machine</a></li>
+              <li><a href="custom.html">Custom Vending Machine</a></li>
+              <li><a href="software.html">Software Monitoring</a></li>
+            </ul>
+          </li>
           <li><a href="#kontak">Kontak</a></li>
         </ul>
       </nav>
     </div>
   </header>
-  <link rel="preload" href="images/banner.webp" as="image" fetchpriority="high">
+
   <section class="hero">
     <div class="hero-content">
       <h2>Mizu: Solusi Vending Machine Cerdas</h2>
@@ -161,6 +166,7 @@
       <a href="#layanan" class="btn">Jelajahi Layanan</a>
     </div>
   </section>
+
   <section id="tentang" class="section">
     <div class="container">
       <h2 class="section-title">Tentang Kami</h2>
@@ -169,34 +175,47 @@
       </p>
     </div>
   </section>
+
   <section id="layanan" class="section bg-light">
     <div class="container">
       <h2 class="section-title">Produk & Layanan</h2>
       <div class="grid">
         <div class="card">
           <div class="card-icon">
-            <i class="fas fa-industry"></i>
+            <i class="fas fa-shopping-cart"></i>
           </div>
-          <h3>Produksi Mesin Vending</h3>
-          <p>Kami merancang dan membangun mesin vending dengan desain modern dan teknologi terkini.</p>
+          <h3>Jual Vending Machine</h3>
+          <p>Vending Machine Standard kapasitas 120 botol dengan sistem pembayaran Cash, QRIS, atau Cash+QRIS.</p>
+          <a href="jual.html" class="btn">Selengkapnya</a>
         </div>
         <div class="card">
           <div class="card-icon">
-            <i class="fas fa-truck"></i>
+            <i class="fas fa-calendar-alt"></i>
           </div>
-          <h3>Distribusi Minuman</h3>
-          <p>Pasokan minuman otomatis dengan sistem logistik yang terintegrasi dan efisien.</p>
+          <h3>Sewa Vending Machine</h3>
+          <p>Solusi sewa vending machine untuk event, kantor, dan lokasi komersial dengan budget fleksibel.</p>
+          <a href="sewa.html" class="btn">Selengkapnya</a>
         </div>
         <div class="card">
           <div class="card-icon">
-            <i class="fas fa-tools"></i>
+            <i class="fas fa-cogs"></i>
           </div>
-          <h3>Monitoring & Maintenance</h3>
-          <p>Sistem pemantauan jarak jauh, serta dukungan teknis dan perawatan mesin vending Anda.</p>
+          <h3>Custom Vending Machine</h3>
+          <p>Jasa pembuatan custom vending machine dari desain 3D hingga produksi sesuai kebutuhan Anda.</p>
+          <a href="custom.html" class="btn">Selengkapnya</a>
+        </div>
+        <div class="card">
+          <div class="card-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3>Software Monitoring</h3>
+          <p>Platform manajemen terpadu untuk memantau dan mengelola semua vending machine Anda.</p>
+          <a href="software.html" class="btn">Selengkapnya</a>
         </div>
       </div>
     </div>
   </section>
+
   <section id="kontak" class="section">
     <div class="container">
       <h2 class="section-title">Hubungi Kami</h2>
@@ -221,16 +240,22 @@
       </ul>
     </div>
   </section>
+
   <footer>
     <div class="container">
       <p>&copy; 2025 Mizu. Vending with care</p>
       <div class="footer-links">
         <a href="#tentang">Tentang Kami</a>
         <a href="#layanan">Layanan</a>
+        <a href="jual.html">Jual</a>
+        <a href="sewa.html">Sewa</a>
+        <a href="custom.html">Custom</a>
+        <a href="software.html">Software</a>
         <a href="#kontak">Kontak</a>
       </div>
     </div>
   </footer>
+
   <script>
     const toggle=document.querySelector('.menu-toggle');
     const nav=document.querySelector('nav');
