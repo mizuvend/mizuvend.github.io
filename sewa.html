@@ -30,8 +30,70 @@
       src: url(https://fonts.gstatic.com/s/urbanist/v15/L0xjDF02iFML4hGCyOCpRdycFsG7SsDQ.woff2) format('woff2');
     }
   </style>
-  <link rel="stylesheet" href="style.min.css">
+  <link rel="stylesheet" href="style.min.css?v=2">
   <link rel="stylesheet" href="fa-custom.css">
+  <style>
+    .vending-gallery-wrapper {
+      width:100%;
+      overflow:hidden;
+      margin-top:20px;
+      position:relative;
+    }
+    .vending-gallery-track {
+      display:flex;
+      gap:30px;
+      width:max-content;
+      will-change:transform;
+    }
+    .vending-gallery-track:hover {
+      animation-play-state:paused;
+    }
+    .vending-item {
+      background:white;
+      border-radius:15px;
+      overflow:hidden;
+      box-shadow:0 10px 30px rgba(0,0,0,0.1);
+      transition:all 0.3s ease;
+      min-width:300px;
+      max-width:350px;
+      flex-shrink:0;
+    }
+    .vending-item:hover {
+      transform:translateY(-8px);
+      box-shadow:0 15px 40px rgba(0,0,0,0.15);
+    }
+    .vending-item img {
+      width:100%;
+      height:auto;
+      display:block;
+      object-fit:cover;
+      pointer-events:none;
+      user-drag:none;
+      -webkit-user-drag:none;
+      user-select:none;
+      -moz-user-select:none;
+      -webkit-user-select:none;
+      -ms-user-select:none;
+    }
+    .vending-caption {
+      text-align:center;
+      padding:15px;
+      color:#0077b6;
+      font-weight:600;
+      font-size:1rem;
+      margin:0;
+      background:#f8fafc;
+    }
+    @media (max-width:768px) {
+      .vending-gallery-track {
+        gap:20px;
+      }
+      .vending-item {
+        min-width:260px;
+        max-width:300px;
+      }
+    }
+  </style>
   <link rel="icon" type="image/x-icon" href="images/mizu.ico" />
   <link rel="shortcut icon" type="image/x-icon" href="images/mizu.ico" />
   <meta name="description" content="Sewa vending machine untuk event, kantor, dan lokasi komersial di Pekanbaru. Mizu menyediakan layanan sewa dengan harga terjangkau dan maintenance gratis.">
@@ -84,6 +146,39 @@
       <p>Solusi praktis untuk event, kantor, dan lokasi komersial dengan budget fleksibel</p>
     </div>
   </div>
+
+  <section class="section bg-light">
+    <div class="container">
+      <div class="vending-gallery-wrapper">
+        <div class="vending-gallery-track">
+          <div class="vending-item">
+            <img src="images/vending/front-side.jpg" alt="Tampilan depan vending machine Mizu" loading="lazy" draggable="false">
+            <p class="vending-caption">Tampilan Depan</p>
+          </div>
+          <div class="vending-item">
+            <img src="images/vending/left-side.jpg" alt="Tampilan samping kiri vending machine Mizu" loading="lazy" draggable="false">
+            <p class="vending-caption">Tampilan Samping Kiri</p>
+          </div>
+          <div class="vending-item">
+            <img src="images/vending/right-side.jpg" alt="Tampilan samping kanan vending machine Mizu" loading="lazy" draggable="false">
+            <p class="vending-caption">Tampilan Samping Kanan</p>
+          </div>
+          <div class="vending-item">
+            <img src="images/vending/front-side.jpg" alt="Tampilan depan vending machine Mizu" loading="lazy" draggable="false">
+            <p class="vending-caption">Tampilan Depan</p>
+          </div>
+          <div class="vending-item">
+            <img src="images/vending/left-side.jpg" alt="Tampilan samping kiri vending machine Mizu" loading="lazy" draggable="false">
+            <p class="vending-caption">Tampilan Samping Kiri</p>
+          </div>
+          <div class="vending-item">
+            <img src="images/vending/right-side.jpg" alt="Tampilan samping kanan vending machine Mizu" loading="lazy" draggable="false">
+            <p class="vending-caption">Tampilan Samping Kanan</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section class="section">
     <div class="container">
@@ -296,6 +391,83 @@
       toggle.classList.toggle('active');
       nav.classList.toggle('active')
     });
+
+    // Auto-scroll slider with manual scroll
+    const track=document.querySelector('.vending-gallery-track');
+    const wrapper=document.querySelector('.vending-gallery-wrapper');
+    if(track && wrapper){
+      let pos=0;
+      let isPaused=false;
+      let isDragging=false;
+      let startX=0;
+      let scrollLeft=0;
+      const speed=1;
+      const itemWidth=330+30;
+      const totalWidth=itemWidth*3;
+
+      // Mouse drag
+      track.addEventListener('mousedown',(e)=>{
+        isPaused=true;
+        isDragging=true;
+        startX=e.pageX;
+        scrollLeft=pos;
+        track.style.cursor='grabbing';
+        track.style.transition='none';
+      });
+      track.addEventListener('mouseleave',()=>{
+        if(isDragging){
+          isDragging=false;
+          track.style.cursor='grab';
+          isPaused=false;
+        }
+      });
+      track.addEventListener('mouseup',()=>{
+        isDragging=false;
+        track.style.cursor='grab';
+        isPaused=false;
+      });
+      track.addEventListener('mousemove',(e)=>{
+        if(!isDragging) return;
+        e.preventDefault();
+        const x=e.pageX;
+        const walk=(x-startX);
+        pos=scrollLeft+walk;
+        track.style.transform='translateX('+pos+'px)';
+      });
+
+      // Touch drag
+      track.addEventListener('touchstart',(e)=>{
+        isPaused=true;
+        isDragging=true;
+        startX=e.touches[0].pageX;
+        scrollLeft=pos;
+      });
+      track.addEventListener('touchend',()=>{
+        isDragging=false;
+        isPaused=false;
+      });
+      track.addEventListener('touchmove',(e)=>{
+        if(!isDragging) return;
+        const x=e.touches[0].pageX;
+        const walk=(x-startX);
+        pos=scrollLeft+walk;
+        track.style.transform='translateX('+pos+'px)';
+      });
+
+      track.style.cursor='grab';
+
+      function scroll(){
+        if(!isPaused && !isDragging){
+          pos-=speed;
+          if(Math.abs(pos)>=totalWidth){
+            pos=0;
+          }
+          track.style.transform='translateX('+pos+'px)';
+        }
+        requestAnimationFrame(scroll);
+      }
+      requestAnimationFrame(scroll);
+    }
   </script>
 </body>
 </html>
