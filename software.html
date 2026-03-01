@@ -51,6 +51,9 @@
     <div class="container">
       <h1>Software Monitoring</h1>
       <p>Sistem monitoring vending machine berbasis cloud dengan dashboard interaktif, manajemen perangkat, dan analitik real-time</p>
+      <div style="margin-top: 20px;">
+        <a href="https://app.mizuvend.com" target="_blank" class="btn btn-white">Buka App Monitoring <i class="fas fa-external-link-alt" style="font-size: 0.8em; margin-left: 5px;"></i></a>
+      </div>
     </div>
   </div>
 
@@ -481,6 +484,7 @@
         <div class="price">Rp 300.000 <small>/bulan/mesin</small></div>
         <p class="price-note">Minimal subscribe 1 mesin</p>
         <div class="cta-buttons">
+          <a href="https://app.mizuvend.com" target="_blank" class="btn btn-white">Login ke App</a>
           <a href="https://wa.me/6285147398196?text=Halo%20MizuVend,%20saya%20tertarik%20software%20monitoring" class="btn btn-white">Pesan Sekarang</a>
         </div>
       </div>
@@ -621,7 +625,7 @@
     }
     .dropdown-email {
       font-size: 0.75rem;
-      color: #6b7280;
+      color: #4b5563;
       margin: 0;
     }
     .dropdown-links {
@@ -647,7 +651,7 @@
     }
     .dropdown-link i {
       width: 16px;
-      color: #9ca3af;
+      color: #6b7280;
     }
     .dropdown-link.active i {
       color: #3b82f6;
@@ -751,7 +755,7 @@
     .metric-label {
       display: block;
       font-size: 0.7rem;
-      color: #9ca3af;
+      color: #d1d5db;
       margin-bottom: 4px;
     }
     .metric-value {
@@ -819,12 +823,12 @@
     }
     .device-time {
       font-size: 0.7rem;
-      color: #6b7280;
+      color: #9ca3af;
     }
     .device-loc {
       display: block;
       font-size: 0.75rem;
-      color: #9ca3af;
+      color: #d1d5db;
       margin-bottom: 8px;
     }
     .device-footer {
@@ -895,7 +899,7 @@
     }
     .role-card p {
       font-size: 0.9rem;
-      color: #666;
+      color: #4b5563;
       margin-bottom: 15px;
     }
     .role-features {
@@ -906,7 +910,7 @@
     .role-features li {
       padding: 5px 0;
       font-size: 0.85rem;
-      color: #555;
+      color: #374151;
     }
     .role-features li:before {
       content: "\f00c";
@@ -947,7 +951,7 @@
     }
     .step-card p {
       font-size: 0.9rem;
-      color: #666;
+      color: #4b5563;
       line-height: 1.6;
     }
 
@@ -990,6 +994,22 @@
     toggle.addEventListener('click',()=>{
       toggle.classList.toggle('active');
       nav.classList.toggle('active')
+    });
+
+    // Smooth scroll animation for sections
+    const observerOptions={
+      threshold:0.1,
+      rootMargin:'0px 0px -100px 0px'
+    };
+    const observer=new IntersectionObserver((entries)=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting){
+          entry.target.classList.add('visible');
+        }
+      })
+    },observerOptions);
+    document.querySelectorAll('.section').forEach(section=>{
+      observer.observe(section);
     });
 
     // Mockup sidebar close button

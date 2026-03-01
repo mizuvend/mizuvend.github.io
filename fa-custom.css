@@ -347,3 +347,8 @@ i.fas, i.fab, .fa {
 .fa-users-cog:before {
   content: "\f509";
 }
+
+/* External Link Alt */
+.fa-external-link-alt:before {
+  content: "\f35d";
+}
