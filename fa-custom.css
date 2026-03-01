@@ -309,3 +309,41 @@ i.fas, i.fab, .fa {
 .fa-shield-alt:before {
   content: "\f3ed";
 }
+
+/* Additional Icons for Navbar & Dropdown */
+.fa-home:before {
+  content: "\f015";
+}
+.fa-user:before {
+  content: "\f007";
+}
+.fa-sign-out-alt:before {
+  content: "\f2f5";
+}
+.fa-sun:before {
+  content: "\f185";
+}
+.fa-moon:before {
+  content: "\f186";
+}
+.fa-times:before {
+  content: "\f00d";
+}
+.fa-map-marked-alt:before {
+  content: "\f5a0";
+}
+.fa-sliders-h:before {
+  content: "\f1de";
+}
+.fa-history:before {
+  content: "\f1da";
+}
+.fa-bars:before {
+  content: "\f0c9";
+}
+.fa-chevron-right:before {
+  content: "\f054";
+}
+.fa-users-cog:before {
+  content: "\f509";
+}
