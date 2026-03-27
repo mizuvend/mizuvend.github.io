@@ -352,3 +352,8 @@ i.fas, i.fab, .fa {
 .fa-external-link-alt:before {
   content: "\f35d";
 }
+
+/* Gift Icon */
+.fa-gift:before {
+  content: "\f06b";
+}
