@@ -1,0 +1,14 @@
+# robots.txt untuk mizuvend.com
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://mizuvend.com/sitemap.xml
+
+# Disallow admin/private directories (jika ada di masa depan)
+# Disallow: /admin/
+# Disallow: /private/
+
+# Crawl-delay (opsional, jika server terlalu busy)
+# Crawl-delay: 1
