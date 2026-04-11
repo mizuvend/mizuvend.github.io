@@ -50,6 +50,23 @@
     }
   }
   </script>
+  <!-- Google Analytics - Hanya aktif di mizuvend.com -->
+  <script>
+    (function() {
+      var allowedDomains = ['https://mizuvend.com', 'https://www.mizuvend.com'];
+      if (allowedDomains.indexOf(window.location.origin) !== -1) {
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-F2QE30C07D';
+        document.head.appendChild(script);
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-F2QE30C07D');
+      }
+    })();
+  </script>
 </head>
 <body>
   <header>
