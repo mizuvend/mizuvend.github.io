@@ -7,6 +7,14 @@
 }
 
 @font-face {
+  font-family: 'Font Awesome 6 Free';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./webfonts/fa-regular-400.woff2') format('woff2');
+}
+
+@font-face {
   font-family: 'Font Awesome 6 Brands';
   font-style: normal;
   font-weight: 400;
@@ -17,6 +25,11 @@
 .fa-solid, .fas {
   font-family: 'Font Awesome 6 Free';
   font-weight: 900;
+}
+
+.fa-regular, .far {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 400;
 }
 
 .fa-brands, .fab {
@@ -288,6 +301,12 @@ i.fas, i.fab, .fa {
 .fa-clock:before {
   content: "\f017";
 }
+.fa-calendar:before {
+  content: "\f133";
+}
+.fa-folder:before {
+  content: "\f07b";
+}
 .fa-coins:before {
   content: "\f51e";
 }
@@ -356,4 +375,12 @@ i.fas, i.fab, .fa {
 /* Gift Icon */
 .fa-gift:before {
   content: "\f06b";
+}
+
+/* Blog Page Icons */
+.fa-heart:before {
+  content: "\f004";
+}
+.fa-hotel:before {
+  content: "\f234";
 }

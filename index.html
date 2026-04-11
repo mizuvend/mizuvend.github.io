@@ -85,13 +85,70 @@
     "inLanguage": "id-ID"
   }
   </script>
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-F2QE30C07D"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Apakah melayani pengiriman luar kota Pekanbaru?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Untuk pembelian (jual), kami dapat melayani pengiriman ke seluruh Indonesia. Namun untuk sewa, layanan saat ini hanya tersedia untuk area Pekanbaru dan sekitarnya."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Berapa lama masa garansi untuk vending machine?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Kami memberikan garansi 1 tahun untuk semua pembelian vending machine. Garansi mencakup kerusakan mesin dan komponen elektrik, serta gratis software monitoring selama 1 tahun."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Apakah restocking minuman disediakan?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Untuk sewa, restocking dilakukan mandiri oleh penyewa. Namun kami dapat memberikan rekomendasi supplier minuman dengan harga kompetitif. Untuk pembelian, Anda bebas mengisi dengan produk apa saja."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Bagaimana sistem pembayaran dengan QRIS?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Vending machine kami terintegrasi dengan sistem QRIS. Pelanggan tinggal scan QR code dan bayar menggunakan e-wallet favorit mereka (GoPay, OVO, Dana, dll). Dana masuk otomatis ke rekening Anda."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Apakah deposit untuk sewa bisa dikembalikan?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ya, deposit Rp10 juta adalah jaminan untuk maintenance dan perbaikan. Sisa deposit akan dikembalikan setelah periode sewa berakhir, dikurangi biaya perbaikan (jika ada)."
+        }
+      }
+    ]
+  }
+  </script>
+  <!-- Google Analytics - Hanya aktif di mizuvend.com -->
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-F2QE30C07D');
+    (function() {
+      var allowedDomains = ['https://mizuvend.com', 'https://www.mizuvend.com'];
+      if (allowedDomains.indexOf(window.location.origin) !== -1) {
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-F2QE30C07D';
+        document.head.appendChild(script);
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-F2QE30C07D');
+      }
+    })();
   </script>
 </head>
 <body>
@@ -102,7 +159,9 @@
              srcset="images/white-mizu-logo-small.png 64w,
                      images/white-mizu-logo.png 400w"
              sizes="64px"
-             alt="Mizu Vending Machine Logo">
+             alt="Mizu Vending Machine Pekanbaru - Logo Jual Sewa Mesin Minuman Otomatis"
+             width="64"
+             height="64">
       </a>
       <button class="menu-toggle" aria-label="Toggle Menu">
         <span></span>
@@ -115,11 +174,12 @@
           <li class="nav-item">
             <a href="#layanan">Layanan <i class="fas fa-chevron-down nav-arrow"></i></a>
             <ul class="nav-dropdown">
-              <li><a href="jual.html">Jual Vending Machine</a></li>
-              <li><a href="sewa.html">Sewa Vending Machine</a></li>
-              <li><a href="software.html">Software Monitoring</a></li>
+              <li><a href="jual-vending-machine.html">Jual Vending Machine</a></li>
+              <li><a href="sewa-vending-machine.html">Sewa Vending Machine</a></li>
+              <li><a href="software-monitoring-vending-machine.html">Software Monitoring</a></li>
             </ul>
           </li>
+          <li><a href="blog/">Blog</a></li>
           <li><a href="#kontak">Kontak</a></li>
         </ul>
       </nav>
@@ -195,7 +255,7 @@
             <li>Garansi 1 tahun</li>
             <li>Gratis software monitoring</li>
           </ul>
-          <a href="jual.html" class="btn">Selengkapnya</a>
+          <a href="jual-vending-machine.html" class="btn">Selengkapnya</a>
         </div>
         <div class="card">
           <div class="card-icon">
@@ -209,7 +269,7 @@
             <li>Dukungan teknis 24/7</li>
             <li>Gratis software monitoring</li>
           </ul>
-          <a href="sewa.html" class="btn">Selengkapnya</a>
+          <a href="sewa-vending-machine.html" class="btn">Selengkapnya</a>
         </div>
         <div class="card">
           <div class="card-icon">
@@ -223,7 +283,7 @@
             <li>Sales analytics</li>
             <li>Mobile friendly</li>
           </ul>
-          <a href="software.html" class="btn">Selengkapnya</a>
+          <a href="software-monitoring-vending-machine.html" class="btn">Selengkapnya</a>
         </div>
       </div>
     </div>
@@ -364,9 +424,9 @@
       <div class="footer-links">
         <a href="#tentang">Tentang Mizu</a>
         <a href="#layanan">Layanan Kami</a>
-        <a href="jual.html">Jual Vending Machine</a>
-        <a href="sewa.html">Sewa Vending Machine</a>
-        <a href="software.html">Software Monitoring</a>
+        <a href="jual-vending-machine.html">Jual Vending Machine</a>
+        <a href="sewa-vending-machine.html">Sewa Vending Machine</a>
+        <a href="software-monitoring-vending-machine.html">Software Monitoring</a>
         <a href="#kontak">Hubungi Kami</a>
       </div>
       <p class="footer-credit" style="margin-top: 15px;">Build by <a href="https://blendinnovation.com" target="_blank" style="color: white; text-decoration: underline;">Blend Innovation</a></p>
