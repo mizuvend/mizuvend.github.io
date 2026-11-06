@@ -6,18 +6,18 @@
   <title>Software Monitoring Vending Machine | Dashboard Cloud | MizuVend Pekanbaru</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.min.css?v=13">
   <link rel="stylesheet" href="fa-custom.css?v=2">
   <link rel="icon" type="image/x-icon" href="images/mizu.ico" />
-  <meta name="description" content="Software monitoring vending machine dengan dashboard cloud, manajemen stok & harga, analitik transaksi, dan role-based access control. Gratis trial 3 bulan!">
+  <meta name="description" content="Software monitoring vending machine dengan dashboard cloud, analitik transaksi, stok & harga, pengaturan mesin remote, manajemen gudang, dan prediksi stok. Gratis trial 3 bulan!">
   <meta name="keywords" content="software vending machine, monitoring vending machine, aplikasi vending machine, dashboard cloud, MizuVend">
   <meta name="author" content="MizuVend Vending Machine">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://mizuvend.com/software-monitoring-vending-machine.html">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Software Monitoring Vending Machine | Dashboard Cloud | MizuVend Pekanbaru">
-  <meta property="og:description" content="Software monitoring vending machine dengan dashboard cloud, manajemen stok & harga, analitik transaksi. Gratis trial 3 bulan!">
+  <meta property="og:description" content="Software monitoring vending machine dengan dashboard cloud, analitik transaksi, stok & harga, manajemen gudang & prediksi stok. Gratis trial 3 bulan!">
   <meta property="og:image" content="https://mizuvend.com/images/mizu-logo.png">
   <meta property="og:url" content="https://mizuvend.com/software-monitoring-vending-machine.html">
   <meta property="og:site_name" content="MizuVend Vending Machine">
@@ -25,7 +25,7 @@
   <meta name="theme-color" content="#0077b6">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Software Monitoring Vending Machine | Dashboard Cloud | MizuVend Pekanbaru">
-  <meta name="twitter:description" content="Software monitoring vending machine dengan dashboard cloud, manajemen stok & harga, analitik transaksi.">
+  <meta name="twitter:description" content="Software monitoring vending machine dengan dashboard cloud, analitik transaksi, stok & harga, manajemen gudang & prediksi stok.">
   <meta name="twitter:image" content="https://mizuvend.com/images/mizu-logo.png">
   <meta name="twitter:site" content="@mizuvend">
   <script type="application/ld+json">
@@ -33,7 +33,7 @@
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "name": "MizuVend Vending Monitoring Software",
-    "description": "Software monitoring vending machine dengan dashboard cloud, manajemen stok & harga, analitik transaksi, dan role-based access control",
+    "description": "Software monitoring vending machine dengan dashboard cloud, analitik transaksi, stok & harga, pengaturan mesin remote, manajemen gudang, prediksi stok, dan role-based access control",
     "applicationCategory": "BusinessApplication",
     "operatingSystem": "Web Browser",
     "offers": {
@@ -79,13 +79,21 @@
       "telephone": "+62-851-4739-8196"
     },
     "featureList": [
-      "Dashboard Interaktif dengan Map",
-      "Manajemen Perangkat",
-      "Analitik Transaksi",
-      "Stok & Harga Management",
-      "Pengaturan Mesin Remote",
-      "Team Management",
-      "Role-Based Access Control"
+      "Dashboard Interaktif dengan Peta Real-time",
+      "Manajemen Perangkat & Hak Akses",
+      "Analitik Transaksi & Grafik Penjualan",
+      "Monitoring Events per Mesin",
+      "Stok, Harga & Mapping Produk 24 Slot",
+      "Mode Pembayaran Tunai & QRIS",
+      "Pengaturan Mesin Remote (Brightness, Suhu, Door Coil)",
+      "Remote Control (Restart, Firmware, RTC Sync, AP Mode)",
+      "Manajemen Gudang: Barang Masuk, Transfer & Opname",
+      "Prediksi Stok & Rekomendasi Pembelian",
+      "Invoice PDF Transaksi Penarikan Uang",
+      "Team Management & Pembatasan Akses Device",
+      "Role-Based Access Control",
+      "Activity Log & Riwayat Perubahan",
+      "Dark Mode & Deteksi Offline"
     ]
   }
   </script>
@@ -142,7 +150,7 @@
   <div class="page-header">
     <div class="container">
       <h1>Software Monitoring</h1>
-      <p>Sistem monitoring vending machine berbasis cloud dengan dashboard interaktif, manajemen perangkat, dan analitik real-time</p>
+      <p>Sistem monitoring vending machine berbasis cloud dengan dashboard interaktif, manajemen perangkat, analitik real-time, manajemen gudang, dan prediksi stok</p>
       <div style="margin-top: 20px;">
         <a href="https://app.mizuvend.com" target="_blank" class="btn btn-white">Buka App Monitoring <i class="fas fa-external-link-alt" style="font-size: 0.8em; margin-left: 5px;"></i></a>
       </div>
@@ -156,12 +164,14 @@
         <!-- Navbar -->
         <div class="mockup-navbar">
           <div class="navbar-left">
-            <img src="images/white-mizu-logo-small.png" alt="MizuVend" class="navbar-logo">
+            <img src="images/white-mizu-logo.png" alt="MizuVend" class="navbar-logo">
           </div>
           <div class="navbar-right">
-            <button class="mockup-icon-btn"><i class="fas fa-sun"></i></button>
+            <button class="mockup-theme-toggle" title="Switch to light mode">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+            </button>
             <div class="mockup-user-menu">
-              <span class="user-initials">MV</span>
+              <button class="user-avatar">MV</button>
               <div class="user-dropdown">
                 <div class="dropdown-profile">
                   <span class="dropdown-initials">MV</span>
@@ -171,10 +181,9 @@
                   </div>
                 </div>
                 <div class="dropdown-links">
-                  <a href="#" class="dropdown-link active">
-                    <i class="fas fa-home"></i> Dashboard
-                  </a>
-                  <a href="#" class="dropdown-link"><i class="fas fa-user"></i> Profile</a>
+                  <a href="#" class="dropdown-link active"><i class="fas fa-home"></i> Dashboard</a>
+                  <a href="#" class="dropdown-link"><i class="fas fa-industry"></i> Warehouse</a>
+                  <a href="#" class="dropdown-link"><i class="fas fa-user"></i> Your Profile</a>
                   <a href="#" class="dropdown-link"><i class="fas fa-clock"></i> Activity Log</a>
                   <a href="#" class="dropdown-link"><i class="fas fa-desktop"></i> Devices</a>
                   <a href="#" class="dropdown-link"><i class="fas fa-building"></i> Company</a>
@@ -193,120 +202,142 @@
             <i class="fas fa-bars"></i>
           </button>
 
-          <!-- Map with Markers -->
+          <!-- Map (dark-v11) -->
           <div class="mockup-map">
-            <div class="map-marker online" style="top:25%;left:20%"></div>
-            <div class="map-marker online" style="top:40%;left:35%"></div>
-            <div class="map-marker warning" style="top:55%;left:50%"></div>
-            <div class="map-marker online" style="top:30%;left:65%"></div>
-            <div class="map-marker offline" style="top:60%;left:25%"></div>
-            <div class="map-marker online" style="top:45%;left:55%"></div>
+            <div class="map-water"></div>
+            <div class="map-road road-1"></div>
+            <div class="map-road road-2"></div>
+            <div class="map-road road-3"></div>
+            <div class="map-marker" style="top:26%;left:20%;background:#22c55e;"></div>
+            <div class="map-marker" style="top:40%;left:35%;background:#22c55e;"></div>
+            <div class="map-marker" style="top:33%;left:64%;background:#22c55e;"></div>
+            <div class="map-marker" style="top:47%;left:57%;background:#22c55e;"></div>
+            <div class="map-marker" style="top:58%;left:27%;background:#9ca3af;"></div>
+            <div class="map-marker" style="top:55%;left:50%;background:#ef4444;"></div>
           </div>
 
           <!-- Sidebar -->
           <div class="mockup-sidebar">
-            <div class="sidebar-top">
-              <h3>Dashboard</h3>
-              <div class="sidebar-icons">
-                <button class="mockup-icon-btn sm"><i class="fas fa-sync-alt"></i></button>
-                <button class="mockup-icon-btn sm"><i class="fas fa-times"></i></button>
+            <div class="sidebar-header">
+              <div class="sidebar-titlebar">
+                <h2>Dashboard</h2>
+                <div class="sidebar-actions">
+                  <button class="sidebar-btn" title="Refresh data"><i class="fas fa-sync-alt"></i></button>
+                  <button class="sidebar-btn"><i class="fas fa-times"></i></button>
+                </div>
               </div>
-            </div>
 
-            <div class="sidebar-content">
-            <!-- Metrics -->
-            <div class="sidebar-metrics">
-              <div class="sidebar-metric">
-                <span class="metric-label">Transaksi Hari Ini</span>
-                <span class="metric-value">847</span>
-                <span class="metric-trend up"><i class="fas fa-arrow-up"></i> +12%</span>
-              </div>
-              <div class="sidebar-metric">
-                <span class="metric-label">Revenue Bulan Ini</span>
-                <span class="metric-value">Rp 127.5jt</span>
-                <span class="metric-trend up"><i class="fas fa-arrow-up"></i> +8%</span>
-              </div>
-              <div class="sidebar-metric">
-                <span class="metric-label">Mesin Online</span>
-                <span class="metric-value">5/6</span>
-                <span class="metric-trend warn"><i class="fas fa-exclamation-triangle"></i> 1 offline</span>
+              <!-- Metrics -->
+              <div class="sidebar-metrics">
+                <div class="metric-card">
+                  <div class="metric-main">
+                    <span class="metric-label">Transaksi Hari Ini</span>
+                    <span class="metric-value">847</span>
+                  </div>
+                  <span class="metric-trend up"><i class="fas fa-arrow-up"></i>+12% dari kemarin</span>
+                </div>
+                <div class="metric-card">
+                  <div class="metric-main">
+                    <span class="metric-label">Revenue Bulan Ini</span>
+                    <span class="metric-value">Rp 127.5jt</span>
+                  </div>
+                  <span class="metric-trend up"><i class="fas fa-arrow-up"></i>+8% dari bulan lalu</span>
+                </div>
+                <div class="metric-card">
+                  <div class="metric-main">
+                    <span class="metric-label">Mesin Online</span>
+                    <span class="metric-value">5/6</span>
+                  </div>
+                  <span class="metric-trend danger"><i class="fas fa-exclamation-triangle"></i>1 error</span>
+                </div>
               </div>
             </div>
 
             <!-- Device List -->
             <div class="sidebar-devices">
-              <div class="device-item online">
-                <div class="device-main">
-                  <span class="device-name">VM-001 - Mall Pekanbaru</span>
-                  <span class="device-time">5m ago</span>
+              <div class="device-card">
+                <div class="device-body">
+                  <div class="device-info">
+                    <h4>VM-001 - Mall Pekanbaru</h4>
+                    <p class="device-time">Just now</p>
+                    <p class="device-loc">Mall Pekanbaru, Lt.1</p>
+                  </div>
+                  <span class="device-dot" style="background:#22c55e;" title="online"></span>
                 </div>
-                <span class="device-loc">Mall Pekanbaru, Lt.1</span>
-                <div class="device-footer">
-                  <span class="status-dot online"></span>
-                  <span class="view-btn">View Details <i class="fas fa-chevron-right"></i></span>
-                </div>
-              </div>
-
-              <div class="device-item online">
-                <div class="device-main">
-                  <span class="device-name">VM-002 - UNRI</span>
-                  <span class="device-time">2m ago</span>
-                </div>
-                <span class="device-loc">Kampus UNRI, Gedung A</span>
-                <div class="device-footer">
-                  <span class="status-dot online"></span>
-                  <span class="view-btn">View Details <i class="fas fa-chevron-right"></i></span>
+                <div class="device-action">
+                  <span class="view-details">View Details <i class="fas fa-chevron-right"></i></span>
                 </div>
               </div>
 
-              <div class="device-item warning">
-                <div class="device-main">
-                  <span class="device-name">VM-003 - RS Awal Bros</span>
-                  <span class="device-time">10m ago</span>
+              <div class="device-card">
+                <div class="device-body">
+                  <div class="device-info">
+                    <h4>VM-002 - UNRI</h4>
+                    <p class="device-time">2m ago</p>
+                    <p class="device-loc">Kampus UNRI, Gedung A</p>
+                  </div>
+                  <span class="device-dot" style="background:#22c55e;" title="online"></span>
                 </div>
-                <span class="device-loc">RS Awal Bros, Lobby</span>
-                <div class="device-footer">
-                  <span class="status-dot warning"></span>
-                  <span class="view-btn">View Details <i class="fas fa-chevron-right"></i></span>
-                </div>
-              </div>
-
-              <div class="device-item online">
-                <div class="device-main">
-                  <span class="device-name">VM-004 - Plaza Senapelan</span>
-                  <span class="device-time">1m ago</span>
-                </div>
-                <span class="device-loc">Plaza Senapelan, Lt.2</span>
-                <div class="device-footer">
-                  <span class="status-dot online"></span>
-                  <span class="view-btn">View Details <i class="fas fa-chevron-right"></i></span>
+                <div class="device-action">
+                  <span class="view-details">View Details <i class="fas fa-chevron-right"></i></span>
                 </div>
               </div>
 
-              <div class="device-item offline">
-                <div class="device-main">
-                  <span class="device-name">VM-005 - SKA Mall</span>
-                  <span class="device-time">2h ago</span>
+              <div class="device-card">
+                <div class="device-body">
+                  <div class="device-info">
+                    <h4>VM-004 - Plaza Senapelan</h4>
+                    <p class="device-time">5m ago</p>
+                    <p class="device-loc">Plaza Senapelan, Lt.2</p>
+                  </div>
+                  <span class="device-dot" style="background:#22c55e;" title="online"></span>
                 </div>
-                <span class="device-loc">SKA Mall, Lt.GF</span>
-                <div class="device-footer">
-                  <span class="status-dot offline"></span>
-                  <span class="view-btn">View Details <i class="fas fa-chevron-right"></i></span>
+                <div class="device-action">
+                  <span class="view-details">View Details <i class="fas fa-chevron-right"></i></span>
                 </div>
               </div>
 
-              <div class="device-item online">
-                <div class="device-main">
-                  <span class="device-name">VM-006 - Mal Pekanbaru</span>
-                  <span class="device-time">8m ago</span>
+              <div class="device-card">
+                <div class="device-body">
+                  <div class="device-info">
+                    <h4>VM-006 - Mal Pekanbaru</h4>
+                    <p class="device-time">8m ago</p>
+                    <p class="device-loc">Mal Pekanbaru, Lt.1</p>
+                  </div>
+                  <span class="device-dot" style="background:#22c55e;" title="online"></span>
                 </div>
-                <span class="device-loc">Mal Pekanbaru, Lt.1</span>
-                <div class="device-footer">
-                  <span class="status-dot online"></span>
-                  <span class="view-btn">View Details <i class="fas fa-chevron-right"></i></span>
+                <div class="device-action">
+                  <span class="view-details">View Details <i class="fas fa-chevron-right"></i></span>
                 </div>
               </div>
-            </div>
+
+              <div class="device-card">
+                <div class="device-body">
+                  <div class="device-info">
+                    <h4>VM-003 - RS Awal Bros</h4>
+                    <p class="device-time">1h ago</p>
+                    <p class="device-loc">RS Awal Bros, Lobby</p>
+                  </div>
+                  <span class="device-dot" style="background:#9ca3af;" title="offline"></span>
+                </div>
+                <div class="device-action">
+                  <span class="view-details">View Details <i class="fas fa-chevron-right"></i></span>
+                </div>
+              </div>
+
+              <div class="device-card">
+                <div class="device-body">
+                  <div class="device-info">
+                    <h4>VM-005 - SKA Mall</h4>
+                    <p class="device-time">2h ago</p>
+                    <p class="device-loc">SKA Mall, Lt.GF</p>
+                  </div>
+                  <span class="device-dot" style="background:#ef4444;" title="error"></span>
+                </div>
+                <div class="device-action">
+                  <span class="view-details">View Details <i class="fas fa-chevron-right"></i></span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -352,66 +383,70 @@
 
   <section class="section bg-light">
     <div class="container">
-      <h2 class="section-title">Fitur Utama</h2>
-      <p class="section-subtitle">Kelola seluruh operasional mesin vending Anda dari satu platform terintegrasi</p>
+      <h2 class="section-title">Daftar Fitur Lengkap</h2>
+      <p class="section-subtitle">Semua fitur aplikasi monitoring MizuVend, dari dashboard peta hingga manajemen gudang & prediksi stok</p>
 
       <div class="grid">
         <div class="card">
           <div class="card-icon">
             <i class="fas fa-map-marked-alt"></i>
           </div>
-          <h3>Dashboard Interaktif</h3>
-          <p>Peta real-time dengan lokasi seluruh mesin vending, status online/offline/disabled/error, dan metric bisnis.</p>
+          <h3>Dashboard & Peta</h3>
           <ul class="feature-list">
-            <li><i class="fas fa-check"></i>Map dengan device markers</li>
-            <li><i class="fas fa-check"></i>Status perangkat color-coded</li>
-            <li><i class="fas fa-check"></i>Transaksi hari ini</li>
-            <li><i class="fas fa-check"></i>Revenue bulan berjalan</li>
-            <li><i class="fas fa-check"></i>Auto-refresh setiap menit</li>
+            <li><i class="fas fa-check"></i>Peta fullscreen dengan marker berwarna per status</li>
+            <li><i class="fas fa-check"></i>Tooltip nama & status saat hover marker</li>
+            <li><i class="fas fa-check"></i>Klik marker: zoom ke lokasi & highlight kartu mesin</li>
+            <li><i class="fas fa-check"></i>Daftar mesin urut online dulu + last seen</li>
+            <li><i class="fas fa-check"></i>Statistik transaksi & revenue + % perubahan</li>
+            <li><i class="fas fa-check"></i>Auto-refresh 60 detik & refresh manual</li>
+            <li><i class="fas fa-check"></i>Dark mode / light mode</li>
+            <li><i class="fas fa-check"></i>Deteksi koneksi offline</li>
           </ul>
         </div>
 
         <div class="card">
           <div class="card-icon">
-            <i class="fas fa-cogs"></i>
+            <i class="fas fa-money-bill-wave"></i>
           </div>
-          <h3>Manajemen Perangkat</h3>
-          <p>Kontrol akses perangkat dengan role-based access, grant/remove device, dan monitoring per mesin.</p>
+          <h3>Transaksi per Mesin</h3>
           <ul class="feature-list">
-            <li><i class="fas fa-check"></i>Daftar perangkat dengan detail</li>
-            <li><i class="fas fa-check"></i>Grant device access</li>
-            <li><i class="fas fa-check"></i>Update device access roles</li>
-            <li><i class="fas fa-check"></i>Remove/delete devices</li>
-            <li><i class="fas fa-check"></i>View device details</li>
+            <li><i class="fas fa-check"></i>Riwayat transaksi per hari & navigasi tanggal</li>
+            <li><i class="fas fa-check"></i>Status: success / canceled / failed + alasan</li>
+            <li><i class="fas fa-check"></i>Badge pembayaran tunai/QRIS & ID transaksi</li>
+            <li><i class="fas fa-check"></i>Grafik pendapatan & transaksi 2 sumbu</li>
+            <li><i class="fas fa-check"></i>Rentang: 7/30/90/180/365 hari, MTD, YTD, kustom</li>
+            <li><i class="fas fa-check"></i>KPI: pendapatan, transaksi, saldo & uang masuk</li>
+            <li><i class="fas fa-check"></i>Tambah transaksi manual (withdraw/adjust)</li>
+            <li><i class="fas fa-check"></i>Invoice PDF penarikan uang siap cetak</li>
+            <li><i class="fas fa-check"></i>Update suhu & pembacaan uang masuk remote</li>
           </ul>
         </div>
 
         <div class="card">
           <div class="card-icon">
-            <i class="fas fa-chart-line"></i>
+            <i class="fas fa-bell"></i>
           </div>
-          <h3>Analitik Transaksi</h3>
-          <p>Lihat riwayat transaksi, revenue trends, dan summary dengan berbagai filter waktu.</p>
+          <h3>Events per Mesin</h3>
           <ul class="feature-list">
-            <li><i class="fas fa-check"></i>7/30/90/180/365 hari</li>
-            <li><i class="fas fa-check"></i>Bulan berjalan (MTD)</li>
-            <li><i class="fas fa-check"></i>Tahun berjalan (YTD)</li>
-            <li><i class="fas fa-check"></i>Custom date range</li>
-            <li><i class="fas fa-check"></i>Tambah transaksi manual</li>
+            <li><i class="fas fa-check"></i>Severity: CRITICAL / ERROR / WARNING / INFO</li>
+            <li><i class="fas fa-check"></i>Navigasi per tanggal (riwayat 1 bulan)</li>
+            <li><i class="fas fa-check"></i>Nilai terformat: uang masuk (Rp) & suhu (°C)</li>
+            <li><i class="fas fa-check"></i>Load more pagination</li>
           </ul>
         </div>
 
         <div class="card">
           <div class="card-icon">
-            <i class="fas fa-boxes"></i>
+            <i class="fas fa-cube"></i>
           </div>
-          <h3>Stok & Harga</h3>
-          <p>Atur stok dan harga untuk 24 slot produk (kolom A & B, masing-masing 12 slot) secara real-time.</p>
+          <h3>Produk (24 Slot)</h3>
           <ul class="feature-list">
-            <li><i class="fas fa-check"></i>24 slot management</li>
-            <li><i class="fas fa-check"></i>Update stok per slot</li>
-            <li><i class="fas fa-check"></i>Update harga per slot</li>
-            <li><i class="fas fa-check"></i>Sinkronisasi langsung ke mesin</li>
+            <li><i class="fas fa-check"></i>Stok per slot A1–A12 & B1–B12 + set cepat</li>
+            <li><i class="fas fa-check"></i>Harga per slot format ribuan otomatis</li>
+            <li><i class="fas fa-check"></i>Mapping slot ke nama produk</li>
+            <li><i class="fas fa-check"></i>Status ON/OFF per slot + toggle semua</li>
+            <li><i class="fas fa-check"></i>Riwayat perubahan: lama → baru & oleh siapa</li>
+            <li><i class="fas fa-check"></i>Konfirmasi PENDING → APPLIED ke mesin</li>
           </ul>
         </div>
 
@@ -420,13 +455,71 @@
             <i class="fas fa-sliders-h"></i>
           </div>
           <h3>Pengaturan Mesin</h3>
-          <p>Kontrol brightness LED, fridge relay, door coil, dan system control dari jarak jauh.</p>
           <ul class="feature-list">
-            <li><i class="fas fa-check"></i>Button LED brightness</li>
-            <li><i class="fas fa-check"></i>Bill display brightness</li>
-            <li><i class="fas fa-check"></i>Backlight LED brightness</li>
-            <li><i class="fas fa-check"></i>Fridge relay on/off</li>
-            <li><i class="fas fa-check"></i>Enable/Disable/Restart mesin</li>
+            <li><i class="fas fa-check"></i>Mode pembayaran: Tunai / QRIS / keduanya</li>
+            <li><i class="fas fa-check"></i>Brightness: Button LED, Bill Display, Backlight</li>
+            <li><i class="fas fa-check"></i>Suhu: setpoint, diferensial, delay & kalibrasi</li>
+            <li><i class="fas fa-check"></i>Door coil: buka pintu remote</li>
+            <li><i class="fas fa-check"></i>Input terkunci otomatis saat mesin offline</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <i class="fas fa-microchip"></i>
+          </div>
+          <h3>Kontrol Sistem Remote</h3>
+          <ul class="feature-list">
+            <li><i class="fas fa-check"></i>Enable / disable & restart mesin</li>
+            <li><i class="fas fa-check"></i>Update firmware dari dashboard</li>
+            <li><i class="fas fa-check"></i>Sinkronisasi waktu RTC dengan server</li>
+            <li><i class="fas fa-check"></i>AP Mode untuk setup jaringan</li>
+            <li><i class="fas fa-check"></i>Adjust uang masuk (koreksi saldo kasir)</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <i class="fas fa-truck"></i>
+          </div>
+          <h3>Gudang: Barang Masuk & Stok</h3>
+          <ul class="feature-list">
+            <li><i class="fas fa-check"></i>Input barang masuk + tanggal kadaluwarsa</li>
+            <li><i class="fas fa-check"></i>Autocomplete produk & total harga live</li>
+            <li><i class="fas fa-check"></i>Ringkasan total & nilai pembelian</li>
+            <li><i class="fas fa-check"></i>Stok per gudang & per mesin</li>
+            <li><i class="fas fa-check"></i>Stok logis vs fisik + badge selisih</li>
+            <li><i class="fas fa-check"></i>Margin per produk (Rp & %)</li>
+            <li><i class="fas fa-check"></i>Badge kadaluwarsa berwarna</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <i class="fas fa-exchange-alt"></i>
+          </div>
+          <h3>Gudang: Transfer & Opname</h3>
+          <ul class="feature-list">
+            <li><i class="fas fa-check"></i>Transfer: Gudang→Mesin, Mesin→Mesin, Mesin→Gudang</li>
+            <li><i class="fas fa-check"></i>Validasi stok & konfirmasi transfer</li>
+            <li><i class="fas fa-check"></i>Riwayat transfer + pelaku & tanggal pindah</li>
+            <li><i class="fas fa-check"></i>Opname: Rusak / Hilang / Kadaluwarsa / Lainnya</li>
+            <li><i class="fas fa-check"></i>Nilai rugi dihitung otomatis</li>
+            <li><i class="fas fa-check"></i>Stok otomatis berkurang setelah opname</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <i class="fas fa-chart-pie"></i>
+          </div>
+          <h3>Prediksi & Rekomendasi</h3>
+          <ul class="feature-list">
+            <li><i class="fas fa-check"></i>Parameter riwayat & target stok (hari)</li>
+            <li><i class="fas fa-check"></i>Penjualan per hari & sisa hari stok</li>
+            <li><i class="fas fa-check"></i>Saran isi mesin per slot</li>
+            <li><i class="fas fa-check"></i>Rekomendasi belanja + perkiraan biaya</li>
+            <li><i class="fas fa-check"></i>Kadaluwarsa terdekat diambil duluan (FEFO)</li>
           </ul>
         </div>
 
@@ -434,13 +527,30 @@
           <div class="card-icon">
             <i class="fas fa-users"></i>
           </div>
-          <h3>Manajemen Tim</h3>
-          <p>Multi-user access dengan role hierarchy, tambah member, update role, dan audit trail.</p>
+          <h3>Company & Tim</h3>
           <ul class="feature-list">
-            <li><i class="fas fa-check"></i>Tambah team member</li>
-            <li><i class="fas fa-check"></i>Update role member</li>
-            <li><i class="fas fa-check"></i>Remove member</li>
-            <li><i class="fas fa-check"></i>Activity log / audit trail</li>
+            <li><i class="fas fa-check"></i>Info perusahaan: nama, ID & tanggal dibuat</li>
+            <li><i class="fas fa-check"></i>Edit nama perusahaan (OWNER)</li>
+            <li><i class="fas fa-check"></i>Tambah member via email otomatis</li>
+            <li><i class="fas fa-check"></i>Update role: ADMIN / TECHNICIAN / VIEWER</li>
+            <li><i class="fas fa-check"></i>Batasi device per member (viewer/teknisi)</li>
+            <li><i class="fas fa-check"></i>Hapus member dengan konfirmasi</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3>Keamanan & Aktivitas</h3>
+          <ul class="feature-list">
+            <li><i class="fas fa-check"></i>Login & register dengan reCAPTCHA</li>
+            <li><i class="fas fa-check"></i>Verifikasi email saat registrasi</li>
+            <li><i class="fas fa-check"></i>Lupa & reset password via email</li>
+            <li><i class="fas fa-check"></i>Ganti password + validasi kekuatan</li>
+            <li><i class="fas fa-check"></i>Edit profil & auto refresh token</li>
+            <li><i class="fas fa-check"></i>Activity log semua aktivitas akun</li>
+            <li><i class="fas fa-check"></i>Notifikasi toast & banner offline</li>
           </ul>
         </div>
       </div>
@@ -458,9 +568,10 @@
           <h3>Owner</h3>
           <p>Full access termasuk update company name dan kelola semua members</p>
           <ul class="role-features">
-            <li>Kelola company settings</li>
+            <li>Edit nama perusahaan</li>
             <li>Add/remove/update members</li>
             <li>Grant/remove device access</li>
+            <li>Akses Warehouse & prediksi stok</li>
             <li>Full dashboard access</li>
           </ul>
         </div>
@@ -470,8 +581,9 @@
           <h3>Admin</h3>
           <p>Kelola devices dan team members, update device access</p>
           <ul class="role-features">
-            <li>Add/remove devices</li>
+            <li>Grant/remove devices</li>
             <li>Manage team members</li>
+            <li>Akses Warehouse & prediksi stok</li>
             <li>View all reports</li>
             <li>Device configuration</li>
           </ul>
@@ -484,8 +596,9 @@
           <ul class="role-features">
             <li>View assigned devices</li>
             <li>Device troubleshooting</li>
-            <li>Update stock & price</li>
-            <li>Machine settings</li>
+            <li>Update stok, harga & mapping produk</li>
+            <li>Machine settings & remote control</li>
+            <li>Tambah transaksi manual (withdraw/adjust)</li>
           </ul>
         </div>
 
@@ -531,7 +644,7 @@
         <div class="step-card">
           <div class="step-number">4</div>
           <h3>Analisis</h3>
-          <p>Lihat report transaksi dan revenue untuk keputusan bisnis yang tepat</p>
+          <p>Lihat report transaksi, revenue, dan prediksi stok untuk keputusan bisnis yang tepat</p>
         </div>
       </div>
     </div>
@@ -564,7 +677,7 @@
             <i class="fas fa-chart-bar"></i>
           </div>
           <h3>Analitik Lengkap</h3>
-          <p>Filter transaksi berbagai periode: 7/30/90/180/365 hari, MTD, YTD, atau custom range. Tambah transaksi manual untuk withdraw.</p>
+          <p>Filter transaksi berbagai periode: 7/30/90/180/365 hari, MTD, YTD, atau custom range. Grafik pendapatan, rincian tunai vs QRIS, saldo kasir, dan invoice PDF untuk penarikan uang.</p>
         </div>
 
         <div class="card card-simple">
@@ -588,7 +701,23 @@
             <i class="fas fa-history"></i>
           </div>
           <h3>Audit Trail</h3>
-          <p>Activity log mencatat semua aktivitas: login, logout, register, device changes, transaction updates untuk transparansi penuh.</p>
+          <p>Activity log mencatat semua aktivitas: login, logout, register, device changes, transaction updates, dan riwayat perubahan konfigurasi mesin (nilai lama → baru) untuk transparansi penuh.</p>
+        </div>
+
+        <div class="card card-simple">
+          <div class="card-icon">
+            <i class="fas fa-industry"></i>
+          </div>
+          <h3>Manajemen Gudang</h3>
+          <p>Input barang masuk dengan tanggal kadaluwarsa, transfer stok Gudang↔Mesin & Mesin↔Mesin, serta stok opname (rusak/hilang/kadaluwarsa) dengan nilai rugi otomatis.</p>
+        </div>
+
+        <div class="card card-simple">
+          <div class="card-icon">
+            <i class="fas fa-lightbulb"></i>
+          </div>
+          <h3>Prediksi Stok</h3>
+          <p>Estimasi penjualan per hari, saran isi mesin, dan rekomendasi pembelian dengan perkiraan biaya. Lot dengan kadaluwarsa terdekat diprioritaskan (FEFO).</p>
         </div>
       </div>
     </div>
@@ -662,11 +791,15 @@
         <h3>Software Monitoring</h3>
         <p>Kelola vending machine Anda dengan mudah dari satu dashboard terintegrasi</p>
         <ul class="check-list">
-          <li>Real-time monitoring dengan map</li>
+          <li>Real-time monitoring dengan map & dark mode</li>
           <li>Manajemen perangkat & role-based access</li>
-          <li>Stok & harga management (24 slot)</li>
-          <li>Pengaturan mesin remote (brightness, fridge, etc)</li>
-          <li>Analitik transaksi dengan filter waktu</li>
+          <li>Stok, harga & mapping produk (24 slot)</li>
+          <li>Pengaturan mesin remote (brightness, suhu, payment)</li>
+          <li>Remote control: restart, firmware, RTC sync, AP mode</li>
+          <li>Analitik transaksi dengan filter waktu & invoice PDF</li>
+          <li>Monitoring events per mesin</li>
+          <li>Manajemen gudang: barang masuk, transfer & opname</li>
+          <li>Prediksi stok & rekomendasi pembelian</li>
           <li>Team management & activity log</li>
           <li>Mobile friendly dashboard</li>
         </ul>
@@ -696,83 +829,99 @@
   </footer>
 
   <style>
-    /* Dashboard Mockup Styles */
+    /* Dashboard Mockup Styles — replika Dashboard app (dark theme) */
     .mockup-container {
       width: 100%;
       max-width: 1200px;
       margin: 0 auto;
-      background: #0f172a;
+      background: #191a1c;
       border-radius: 16px;
       overflow: hidden;
       box-shadow: 0 25px 80px rgba(0,0,0,0.3);
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      text-align: left;
     }
 
-    /* Navbar */
+    /* Navbar — bg-gray-950, h-16 */
     .mockup-navbar {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 0 20px;
+      padding: 0 24px;
       height: 64px;
-      background: #111827;
-      border-bottom: 1px solid rgba(255,255,255,0.1);
+      background: #030712;
     }
     .navbar-logo {
-      height: 32px;
+      height: 24px;
     }
     .navbar-right {
       display: flex;
       align-items: center;
-      gap: 16px;
+      gap: 12px;
     }
-    .mockup-icon-btn {
+
+    /* Theme Toggle — w-9 h-9 rounded-lg; mode gelap: bg-gray-200 + ikon matahari */
+    .mockup-theme-toggle {
       width: 36px;
       height: 36px;
       border: none;
-      background: rgba(255,255,255,0.1);
       border-radius: 8px;
-      color: #9ca3af;
+      background: #e5e7eb;
       cursor: pointer;
       display: flex;
       align-items: center;
       justify-content: center;
+      padding: 0;
+      transition: background 0.15s;
     }
-    .mockup-icon-btn.sm {
-      width: 28px;
-      height: 28px;
+    .mockup-theme-toggle svg {
+      width: 20px;
+      height: 20px;
+      stroke: #1f2937;
     }
-    .mockup-icon-btn:hover {
-      background: rgba(255,255,255,0.15);
+    .mockup-theme-toggle:hover {
+      background: #d1d5db;
     }
 
-    /* User Menu */
+    /* Avatar — w-8 h-8 gradient primary-500 ke primary-700, ring-2 gray-600 */
     .mockup-user-menu {
       position: relative;
       display: flex;
       align-items: center;
     }
-    .user-initials {
-      width: 36px;
-      height: 36px;
+    .user-avatar {
+      width: 32px;
+      height: 32px;
       border-radius: 50%;
-      background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-      border: 2px solid #1f2937;
+      border: none;
+      background: linear-gradient(135deg, #0ea5e9, #0369a1);
+      box-shadow: 0 0 0 2px #4b5563;
       display: flex;
       align-items: center;
       justify-content: center;
       color: white;
-      font-size: 0.75rem;
-      font-weight: 600;
+      font-family: inherit;
+      font-size: 14px;
+      font-weight: 500;
       cursor: pointer;
+      padding: 0;
+      transition: box-shadow 0.15s;
     }
+    .mockup-user-menu:hover .user-avatar {
+      box-shadow: 0 0 0 2px #0ea5e9;
+    }
+
+    /* Dropdown — w-64 bg-gray-800 rounded-lg shadow-lg */
     .user-dropdown {
       position: absolute;
       right: 0;
-      top: calc(100% + 4px);
-      width: 240px;
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 10px 40px rgba(0,0,0,0.25);
+      top: calc(100% + 8px);
+      width: 256px;
+      background: #1f2937;
+      border-radius: 8px;
+      box-shadow: 0 10px 15px -3px rgba(0,0,0,0.3), 0 4px 6px -4px rgba(0,0,0,0.3);
+      padding: 8px 0;
+      color: #f3f4f6;
       opacity: 0;
       visibility: hidden;
       transform: translateY(-8px);
@@ -788,19 +937,20 @@
       display: flex;
       align-items: center;
       gap: 12px;
-      padding: 16px;
-      border-bottom: 1px solid #e5e7eb;
+      padding: 12px 16px;
+      border-bottom: 1px solid #374151;
     }
     .dropdown-initials {
       width: 40px;
       height: 40px;
       border-radius: 50%;
-      background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+      background: linear-gradient(135deg, #0ea5e9, #0369a1);
       display: flex;
       align-items: center;
       justify-content: center;
       color: white;
-      font-weight: 600;
+      font-size: 14px;
+      font-weight: 500;
       flex-shrink: 0;
     }
     .dropdown-text {
@@ -808,259 +958,298 @@
       min-width: 0;
     }
     .dropdown-name {
-      font-size: 0.875rem;
-      font-weight: 600;
-      color: #1f2937;
-      margin: 0 0 2px 0;
+      font-size: 14px;
+      font-weight: 500;
+      color: #ffffff;
+      margin: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     .dropdown-email {
-      font-size: 0.75rem;
-      color: #4b5563;
+      font-size: 12px;
+      color: #9ca3af;
       margin: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     .dropdown-links {
-      padding: 8px;
+      padding: 4px 0;
     }
     .dropdown-link {
       display: flex;
       align-items: center;
       gap: 12px;
-      padding: 10px 12px;
-      color: #374151;
+      padding: 8px 16px;
+      color: #f3f4f6;
       text-decoration: none;
-      font-size: 0.875rem;
-      border-radius: 8px;
-      transition: all 0.15s;
-    }
-    .dropdown-link:hover {
-      background: #f3f4f6;
-    }
-    .dropdown-link.active {
-      background: #eff6ff;
-      color: #3b82f6;
+      font-size: 14px;
+      transition: background 0.15s;
     }
     .dropdown-link i {
       width: 16px;
-      color: #6b7280;
+      color: #9ca3af;
+      text-align: center;
     }
-    .dropdown-link.active i {
-      color: #3b82f6;
+    .dropdown-link:hover,
+    .dropdown-link.active {
+      background: #374151;
     }
     .dropdown-divider {
       height: 1px;
-      background: #e5e7eb;
-      margin: 8px 0;
+      background: #374151;
     }
     .dropdown-logout {
-      color: #dc2626;
+      color: #f87171;
     }
     .dropdown-logout i {
-      color: #dc2626;
+      color: #f87171;
+    }
+    .dropdown-logout:hover {
+      background: rgba(127, 29, 29, 0.2);
     }
 
     /* Content Area */
     .mockup-content {
       position: relative;
-      height: 500px;
+      height: 540px;
     }
 
-    /* Map */
+    /* Map — Mapbox dark-v11 */
     .mockup-map {
       position: absolute;
       inset: 0;
-      background: linear-gradient(180deg, #1e3a5f 0%, #0f172a 100%);
-      background-image:
-        linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
-      background-size: 50px 50px;
+      background: #191a1c;
+      overflow: hidden;
     }
-    .mockup-map::before {
-      content: '';
+    .map-water {
       position: absolute;
-      inset: 0;
-      background:
-        radial-gradient(ellipse at 30% 40%, rgba(59,130,246,0.1) 0%, transparent 50%),
-        radial-gradient(ellipse at 70% 60%, rgba(59,130,246,0.08) 0%, transparent 40%);
+      left: -12%;
+      bottom: -35%;
+      width: 75%;
+      height: 70%;
+      background: #12161b;
+      border-radius: 50% 50% 0 0 / 90% 90% 0 0;
+      transform: rotate(-7deg);
     }
+    .map-road {
+      position: absolute;
+      background: rgba(255,255,255,0.05);
+      border-radius: 2px;
+    }
+    .road-1 { top: 32%; left: -5%; width: 72%; height: 3px; transform: rotate(-8deg); }
+    .road-2 { top: 60%; left: 18%; width: 95%; height: 4px; transform: rotate(5deg); background: rgba(255,255,255,0.07); }
+    .road-3 { top: 8%; left: 56%; width: 3px; height: 58%; transform: rotate(14deg); }
+
+    /* Marker — w-5 h-5, border-2 putih, shadow-md, anchor bottom */
     .map-marker {
       position: absolute;
-      width: 16px;
-      height: 16px;
+      width: 20px;
+      height: 20px;
       border-radius: 50%;
-      border: 2px solid white;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-      transform: translate(-50%, -50%);
+      border: 2px solid #ffffff;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.3);
+      transform: translate(-50%, -100%);
+      cursor: pointer;
+      transition: transform 0.2s;
     }
-    .map-marker.online { background: #22c55e; }
-    .map-marker.offline { background: #6b7280; }
-    .map-marker.warning { background: #eab308; }
+    .map-marker:hover {
+      transform: translate(-50%, -100%) scale(1.1);
+    }
 
-    /* Sidebar */
+    /* Sidebar — top-20 right-4 bottom-4 w-80, glass gray-800/95 */
     .mockup-sidebar {
       position: absolute;
       top: 16px;
       right: 16px;
       bottom: 16px;
-      width: 300px;
+      width: 320px;
       background: rgba(31, 41, 55, 0.95);
       backdrop-filter: blur(12px);
       border-radius: 12px;
-      border: 1px solid rgba(255,255,255,0.1);
+      border: 1px solid rgba(55, 65, 81, 0.5);
+      box-shadow: 0 20px 25px -5px rgba(0,0,0,0.3), 0 8px 10px -6px rgba(0,0,0,0.3);
       display: flex;
       flex-direction: column;
       overflow: hidden;
       transition: transform 0.3s ease, opacity 0.3s ease;
     }
-    .sidebar-top {
+    .sidebar-header {
+      padding: 16px;
+      border-bottom: 1px solid rgba(55, 65, 81, 0.5);
+    }
+    .sidebar-titlebar {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 16px;
-      border-bottom: 1px solid rgba(255,255,255,0.1);
+      margin-bottom: 12px;
     }
-    .sidebar-top h3 {
-      font-size: 1rem;
+    .sidebar-titlebar h2 {
+      font-size: 18px;
       font-weight: 600;
-      color: white;
+      color: #ffffff;
       margin: 0;
     }
-    .sidebar-icons {
+    .sidebar-actions {
       display: flex;
+      align-items: center;
       gap: 8px;
     }
-    .sidebar-content {
-      flex: 1;
-      overflow-y: auto;
-      overflow-x: hidden;
+    .sidebar-btn {
+      padding: 8px;
+      border: none;
+      background: transparent;
+      border-radius: 8px;
+      color: #d1d5db;
+      cursor: pointer;
+      font-size: 20px;
+      line-height: 1;
+      transition: background 0.15s;
     }
-    .sidebar-content::-webkit-scrollbar {
-      width: 6px;
-    }
-    .sidebar-content::-webkit-scrollbar-track {
-      background: rgba(255,255,255,0.05);
-    }
-    .sidebar-content::-webkit-scrollbar-thumb {
-      background: rgba(255,255,255,0.2);
-      border-radius: 3px;
-    }
-    .sidebar-content::-webkit-scrollbar-thumb:hover {
-      background: rgba(255,255,255,0.3);
+    .sidebar-btn:hover {
+      background: #374151;
     }
 
-    /* Metrics */
+    /* Metrics — p-2 bg-gray-700 rounded-lg border gray-600 */
     .sidebar-metrics {
-      padding: 12px;
       display: flex;
       flex-direction: column;
       gap: 8px;
     }
-    .sidebar-metric {
-      padding: 12px;
-      background: rgba(0,0,0,0.2);
+    .metric-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      padding: 8px;
+      background: #374151;
+      border: 1px solid #4b5563;
       border-radius: 8px;
-      border: 1px solid rgba(255,255,255,0.05);
+    }
+    .metric-main {
+      flex: 1;
+      min-width: 0;
     }
     .metric-label {
       display: block;
-      font-size: 0.7rem;
+      font-size: 12px;
       color: #d1d5db;
-      margin-bottom: 4px;
     }
     .metric-value {
       display: block;
-      font-size: 1.125rem;
+      font-size: 18px;
       font-weight: 700;
-      color: white;
-      margin-bottom: 4px;
+      color: #ffffff;
     }
     .metric-trend {
       display: flex;
       align-items: center;
       gap: 4px;
-      font-size: 0.7rem;
+      font-size: 12px;
+      font-weight: 500;
+      white-space: nowrap;
+    }
+    .metric-trend i {
+      font-size: 12px;
     }
     .metric-trend.up {
-      color: #22c55e;
+      color: #4ade80;
     }
-    .metric-trend.warn {
-      color: #f59e0b;
+    .metric-trend.danger {
+      color: #f87171;
     }
 
     /* Device List */
     .sidebar-devices {
       flex: 1;
       overflow-y: auto;
-      padding: 12px;
+      padding: 16px;
       display: flex;
       flex-direction: column;
       gap: 8px;
     }
     .sidebar-devices::-webkit-scrollbar {
-      width: 4px;
+      width: 6px;
+    }
+    .sidebar-devices::-webkit-scrollbar-track {
+      background: transparent;
     }
     .sidebar-devices::-webkit-scrollbar-thumb {
-      background: rgba(255,255,255,0.2);
-      border-radius: 2px;
+      background: rgba(255,255,255,0.15);
+      border-radius: 3px;
     }
-    .device-item {
-      padding: 12px;
-      background: rgba(255,255,255,0.05);
-      border-radius: 10px;
-      border: 1px solid rgba(255,255,255,0.08);
-      border-left: 3px solid transparent;
+    .device-card {
+      border-radius: 12px;
+      border: 1px solid rgba(55, 65, 81, 0.5);
+      background: rgba(31, 41, 55, 0.5);
+      backdrop-filter: blur(4px);
+      transition: border-color 0.15s, background 0.15s;
     }
-    .device-item.online {
-      border-left-color: #22c55e;
+    .device-card:hover {
+      border-color: rgba(75, 85, 99, 0.5);
+      background: rgba(55, 65, 81, 0.5);
     }
-    .device-item.offline {
-      border-left-color: #6b7280;
-    }
-    .device-item.warning {
-      border-left-color: #eab308;
-    }
-    .device-main {
+    .device-body {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       justify-content: space-between;
-      margin-bottom: 4px;
+      padding: 12px;
     }
-    .device-name {
-      font-size: 0.875rem;
-      font-weight: 600;
-      color: white;
+    .device-info {
+      flex: 1;
+      min-width: 0;
+    }
+    .device-info h4 {
+      font-size: 14px;
+      font-weight: 500;
+      color: #ffffff;
+      margin: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     .device-time {
-      font-size: 0.7rem;
+      font-size: 12px;
       color: #9ca3af;
+      margin: 2px 0 0;
     }
     .device-loc {
-      display: block;
-      font-size: 0.75rem;
-      color: #d1d5db;
-      margin-bottom: 8px;
+      font-size: 12px;
+      color: #9ca3af;
+      margin: 4px 0 0;
     }
-    .device-footer {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .status-dot {
-      width: 8px;
-      height: 8px;
+    .device-dot {
+      width: 12px;
+      height: 12px;
       border-radius: 50%;
+      flex-shrink: 0;
+      margin-left: 8px;
+      margin-top: 4px;
     }
-    .status-dot.online { background: #22c55e; }
-    .status-dot.offline { background: #6b7280; }
-    .status-dot.warning { background: #eab308; }
-    .view-btn {
-      font-size: 0.7rem;
-      color: #60a5fa;
+    .device-action {
+      padding: 0 12px 12px;
+    }
+    .view-details {
       display: flex;
       align-items: center;
+      justify-content: center;
       gap: 4px;
+      width: 100%;
+      padding: 6px 0;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: 500;
+      color: #60a5fa;
+      background: rgba(30, 58, 138, 0.3);
+      cursor: pointer;
+      transition: background 0.15s;
     }
-    .view-btn i {
-      font-size: 0.6rem;
+    .view-details:hover {
+      background: rgba(30, 58, 138, 0.5);
+    }
+    .view-details i {
+      font-size: 12px;
     }
 
     /* Role Cards */
@@ -1165,34 +1354,36 @@
 
     @media (max-width: 768px) {
       .mockup-sidebar {
-        width: 260px;
+        width: 280px;
       }
       .mockup-content {
-        height: 400px;
+        height: 460px;
       }
     }
 
-    /* Reopen Button */
+    /* Reopen Button — bg-gray-800/95 + ikon bars (seperti app saat sidebar ditutup) */
     .mockup-reopen-btn {
       position: absolute;
-      top: 80px;
+      top: 16px;
       right: 16px;
-      width: 40px;
-      height: 40px;
-      background: rgba(31, 41, 55, 0.9);
-      backdrop-filter: blur(12px);
-      border: 1px solid rgba(255,255,255,0.1);
-      border-radius: 10px;
-      color: white;
+      padding: 12px;
+      background: rgba(31, 41, 55, 0.95);
+      backdrop-filter: blur(4px);
+      border: 1px solid #374151;
+      border-radius: 8px;
+      color: #d1d5db;
       cursor: pointer;
       display: none;
       align-items: center;
       justify-content: center;
+      font-size: 24px;
+      line-height: 1;
+      box-shadow: 0 10px 15px -3px rgba(0,0,0,0.3);
       z-index: 50;
-      transition: all 0.2s ease;
+      transition: background 0.15s;
     }
     .mockup-reopen-btn:hover {
-      background: rgba(31, 41, 55, 1);
+      background: rgba(55, 65, 81, 1);
     }
   </style>
 
